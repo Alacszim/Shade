@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+* {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    color: gray;
+}
+
+html {
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.container {
+    border-radius: 10px;
+}
+
+header {
+    background: #151515;
+    z-index: 1;
+    position: relative;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.40) 0px 12px 26px, rgba(0, 0, 0, 0.38) 0px 8px 8px;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+}
+
+nav a {
+    color: var(--blurple);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: var(--blurple);
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+:root {
+    --blurple: #7289da;
+    --gray: #2c2f33;
+    --darkgray: #23272a;
+}
+
+#blurple {
+    color: var(--blurple);
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #202020;
+    height: 2000px;
+}
+
+hr {
+    width: 100px;
+}
+
+#main {
+    background: #151515;
+    border-radius: 20px;
+    z-index: 1;
+    position: relative;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: rgba(0, 0, 0, 0.40) 0px 12px 26px, rgba(0, 0, 0, 0.38) 0px 8px 8px;
+}
+
+#mid {
+    background: #151515;
+    border-radius: 20px;
+    z-index: 1;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: rgba(0, 0, 0, 0.40) 0px 12px 26px, rgba(0, 0, 0, 0.38) 0px 8px 8px;
+}
+
+.btn {
+    background-color: #151515;
+    box-shadow: rgba(0, 0, 0, 0.40) 0px 12px 26px, rgba(0, 0, 0, 0.38) 0px 8px 8px;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px;
+    height: 50px;
+    padding: 10px;
+}
+
+.btn:hover {
+    opacity: .75;
+}
+
+li {
+    font-size: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #202020;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #151515;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
