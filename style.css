@@ -21,7 +21,6 @@ header {
     border-radius: 10px;
     padding-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.40) 0px 12px 26px, rgba(0, 0, 0, 0.38) 0px 8px 8px;
-    margin-bottom: 20px;
 }
 
 header::after {
